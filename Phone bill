@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+  int unit;
+  float Bill_1,Bill_2,Bill_3 ,Tax_1,Tax_2,Tax_3, Totalbill;
+  printf("Enter the units\n");
+  scanf("%d", &unit);
+  Bill_1 = 100*2;
+  Bill_2 = (unit - 100)*3;
+  Bill_3 = (unit - 200)*5;
+  Tax_1 = Bill_1*0.1;
+  Tax_2 = Bill_2 * 0.2;
+  Tax_3 = Bill_3*0.25;
+  if(unit<=100)
+  {
+  Totalbill = Bill_1 + Tax_1;
+  printf("The bill is %f\n",Totalbill);
+  }
+  if(unit>=100 && unit<=200)
+  {
+  Totalbill = Bill_1 +Bill_2 +Tax_1 +Tax_2;
+  printf("The bill is %f\n",Totalbill);
+  }
+  if(unit>200)
+  {
+  Totalbill = Bill_1 + Bill_2 + Bill_3 + Tax_1 + Tax_2 +Tax_3;
+  printf("The bill is %f", Totalbill);
+  }
+  return 0;
+
+}

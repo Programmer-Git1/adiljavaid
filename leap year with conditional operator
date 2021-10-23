@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+int century_year,year;
+ printf("Enter the century year and year\n");
+ scanf(" %d %d",&century_year,&year);
+ (century_year%100==0)?printf("The century year %d is a leap year\n",century_year):printf("The century year %d is not a leap year\n", century_year);
+(year%4==0)?printf("The year %d is leap year\n", year):printf("The year %d is not leap year\n",year);
+
+  return 0;
+}
